@@ -1,0 +1,183 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {font-size: 2em;}
+p {font-size: 1.8em;}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{background-color: rgb(218, 218, 218);}
+
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.6em;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: green;
+}
+
+header p a{
+    color: green;
+}
+
+header p a:hover{
+    color: rgb(0, 58, 0);
+}
+
+.Comentario {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    display: flex;
+}
+
+.Comentario .contenedor {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.Comentario h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Comentario form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Comentario label {
+    text-align: left;
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.Comentario textarea {
+    height: 120px; 
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical; 
+}
+
+.Comentario button {
+    background-color: green;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.Comentario button:hover {
+    background-color: darkgreen;
+}
+
+footer{
+    background-color: rgb(218, 218, 218);
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer p{
+    margin: 0;
+    color: black;
+    font-size: 1.5em;
+    padding: 12px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+@media (min-width: 720px){
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    header .logo {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    header nav {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+}
